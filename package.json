@@ -4,7 +4,7 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "build": "strapi build",
+    "build": "node scripts/check-swc.cjs && strapi build",
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
@@ -18,7 +18,9 @@
     "@strapi/plugin-cloud": "5.50.0",
     "@strapi/plugin-users-permissions": "5.50.0",
     "@strapi/strapi": "5.50.0",
+    "@swc/core": "1.15.43",
     "better-sqlite3": "12.8.0",
+    "pg": "^8.13.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -29,6 +31,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@swc/core": "1.15.43"
   },
   "engines": {
     "node": ">=20.0.0 <=26.x.x",

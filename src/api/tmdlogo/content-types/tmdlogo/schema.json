@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tmdlogos",
+  "info": {
+    "singularName": "tmdlogo",
+    "pluralName": "tmdlogos",
+    "displayName": "header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tmd_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

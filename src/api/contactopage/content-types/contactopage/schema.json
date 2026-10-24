@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactopages",
+  "info": {
+    "singularName": "contactopage",
+    "pluralName": "contactopages",
+    "displayName": "contactopage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contactform": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Herocontact": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
